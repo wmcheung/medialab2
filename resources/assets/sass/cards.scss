@@ -1,0 +1,27 @@
+.card-container {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  padding: 25px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.card-logo {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: $text-color;
+}
+
+.card-footer-outside {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: $text-color;
+}
+

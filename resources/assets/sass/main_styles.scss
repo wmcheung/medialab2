@@ -1,0 +1,53 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+  background-color: $body-bg;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+a {
+  font-weight: 500;
+}
+
+label {
+  color: $text-color;
+  font-weight: 400;
+  text-align: left;
+  font-size: 14px;
+}
+
+input {
+  border: 1px solid #E5E5E5 !important;
+  border-radius: 3px !important;
+  box-shadow: none !important;
+  font-weight: 300 !important;
+  color: $text-color !important;
+  margin: 5px 0 17px 0 !important;
+  padding: 1.5rem 0.5rem 1.5rem 0.75rem !important;
+}
+
+input[type='password'] {
+  font-size: 2rem !important;
+}
+
+.switch.radius {
+  .switch-paddle {
+    border-radius: 100px;
+    &:after {
+      border-radius: 50%;
+    }
+  }
+}
+
+.button.radius {
+  border-radius: 7px;
+  padding: 17px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.small-disclaimer {
+  font-size: 13px;
+}
