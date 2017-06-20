@@ -3,33 +3,29 @@
 @section('content')
 <div class="flex-center position-ref full-height">
     <div class="row align-center content">
-        <div class="card-container medium-4">
+        <div class="card-container medium-5">
             <div class="card-header">
                 <div class="card-logo"><img src="/images/logo.png"/></div>
-                <h1 class="card-title">Registreren</h1>
+                <h1 class="card-title">Inloggen</h1>
             </div>
             <div class="card-body">
-                <form>
+                <form action="{{ route('auth.login') }}" method="POST">
+                    {!! csrf_field() !!}
                     <div class="row">
                         <div class="medium-12 columns">
-                            <label>Naam
-                                <input type="text" placeholder="">
-                            </label>
-                        </div>
-                        <div class="medium-12 columns">
                             <label>E-mail
-                                <input type="email" placeholder="">
+                                <input type="email" name="email" placeholder="">
                             </label>
                         </div>
                         <div class="medium-12 columns">
                             <label>Wachtwoord
-                                <input type="password" placeholder="">
+                                <input type="password" name="password" placeholder="">
                             </label>
                         </div>
                         <div class="medium-12 columns">
                             <div class="row">
                                 <div class="medium-9 columns">
-                                    <label>Melding ontvangen</label>
+                                    <label>Ingelogd blijven<label>
                                 </div>
                                 <div class="medium-3 columns">
                                     <div class="switch tiny radius">
@@ -41,15 +37,13 @@
                                 </div>
                             </div>
 
-                            <p class="small-disclaimer">Door op "registreren" te klikken, ga je akkoord met de <a href="#">algemene voorwaarden</a>.</p>
-
-                            <button type="submit" class="button radius expanded">Registreren</button>
+                            <button type="submit" class="button radius expanded">Inloggen</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="card-footer-outside">
-                <p>Heb je al een account? <a href="/">Log In</a></p>
+                <p>Nog geen account? <a href="{{ route('auth.register') }}">Registreer</a></p>
             </div>
         </div>
     </div>

@@ -1,24 +1,12 @@
 <?php
+Route::group(['middleware'=>'guest', 'namespace'=>'Auth'], function() {
+    Route::get('login', 'AuthController@login')->name('auth.login');
+    Route::post('login', 'AuthController@loginPost')->name('auth.login');
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/', function () {
-    return view('welcome');
+    Route::get('register', 'AuthController@register')->name('auth.register');
 });
 
-Route::get('register', function() {
-   return view('register');
-});
 
-Route::get('dashboard', function() {
-    return view('dashboard');
+Route::group(['middleware'=>'auth', 'namespace'=>'Dashboard', 'prefix'=>'dashboard'], function() {
+    Route::get('/', 'DashboardController@index')->name('dashboard.index');
 });
