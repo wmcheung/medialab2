@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('content')
 <div class="flex-center position-ref full-height">
@@ -9,7 +9,10 @@
                 <h1 class="card-title">Registreren</h1>
             </div>
             <div class="card-body">
-                <form method="post" action="{{ route('auth.register') }}">
+                @include('includes.errors')
+                @include('includes.notifications')
+
+                <form action="{{ route('auth.register') }}" method="post">
                     {!! csrf_field() !!}
                     <div class="row">
                         <div class="medium-12 columns">

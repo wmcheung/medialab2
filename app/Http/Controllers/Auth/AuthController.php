@@ -32,4 +32,10 @@ class AuthController extends Controller
 
         return redirect()->route('dashboard.index')->with('Success', 'U bent ingelogd');
     }
+
+    public function logout() {
+        auth()->logout();
+
+        return redirect()->route('auth.login')->with('Success', 'U bent uitgelogd');
+    }
 }
