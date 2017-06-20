@@ -9,21 +9,22 @@
                 <h1 class="card-title">Registreren</h1>
             </div>
             <div class="card-body">
-                <form>
+                <form method="post" action="{{ route('auth.register') }}">
+                    {!! csrf_field() !!}
                     <div class="row">
                         <div class="medium-12 columns">
                             <label>Naam
-                                <input type="text" placeholder="">
+                                <input type="text" name="name" placeholder="">
                             </label>
                         </div>
                         <div class="medium-12 columns">
                             <label>E-mail
-                                <input type="email" placeholder="">
+                                <input type="email" name="email" placeholder="">
                             </label>
                         </div>
                         <div class="medium-12 columns">
                             <label>Wachtwoord
-                                <input type="password" placeholder="">
+                                <input type="password" name="password" placeholder="">
                             </label>
                         </div>
                         <div class="medium-12 columns">

@@ -4,6 +4,7 @@ Route::group(['middleware'=>'guest', 'namespace'=>'Auth'], function() {
     Route::post('login', 'AuthController@loginPost')->name('auth.login');
 
     Route::get('register', 'AuthController@register')->name('auth.register');
+    Route::post('register', 'AuthController@register')->name('auth.register');
 });
 
 
