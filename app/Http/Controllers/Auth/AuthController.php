@@ -28,6 +28,7 @@ class AuthController extends Controller
 
     public function registerPost(CreateRegisterRequest $request) {
         $user = User::create($request->all());
+
         auth()->login($user);
 
         return redirect()->route('dashboard.index')->with('Success', 'U bent ingelogd');
