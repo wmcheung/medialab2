@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    @yield('styles')
+
     <title>Dordrecht Dashboard - Prove data wrong</title>
 
     <!-- Fonts -->
@@ -17,5 +19,7 @@
 @yield('content')
 <script src="{{ mix('/js/app.js') }}"></script>
 <script src="{{ mix('/js/foundation.js') }}"></script>
+
+@yield('scripts')
 </body>
 </html>

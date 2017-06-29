@@ -15,8 +15,34 @@
         <div class="row grid-stack">
             <div class="large-12 columns">
                 <div class="grid-stack">
+                    <div class="grid-stack-item" data-gs-x="100" data-gs-y="1" data-gs-width="12" data-gs-height="5">
+                        <div class="grid-stack-item-content">
+                            <div class="dashboard-title">Timeline</div>
+
+                            <!-- CARD: Melding en in de wijk -->
+                            <div class="card-container card-dashboard">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="medium-2 columns"><img src="/images/np_neighbourhood.png"/></div>
+
+                                        <div class="medium-10 columns">
+                                            <div class="card-title">
+                                                Tijdline <br>
+                                                <sub>Deze tijdlijn laten de voorspellingen zien voor de aankomende dagen op basis van neerslag en droogte.</sub>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    {!! $chart->render() !!} <br><br>
+                                </div>
+                            </div>
+                            <!-- END CARD -->
+                        </div>
+                    </div>
+
                     <!-- ACUTE MELDINGEN -->
-                    <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="6" data-gs-height="9">
+                    <div class="grid-stack-item" data-gs-x="0" data-gs-y="5" data-gs-width="6" data-gs-height="9">
                         <div class="grid-stack-item-content">
                             <div class="dashboard-title">Acute meldingen</div>
 
@@ -85,7 +111,7 @@
                     </div>
 
                     <!-- ACTUELE WEERSVERWACHTIGINGEN -->
-                    <div class="grid-stack-item" data-gs-x="100" data-gs-y="0" data-gs-width="6" data-gs-height="9">
+                    <div class="grid-stack-item" data-gs-x="100" data-gs-y="5" data-gs-width="6" data-gs-height="9">
                         <div class="grid-stack-item-content">
                             <div class="dashboard-title">Actuele weersverwachtingen</div>
 
@@ -199,7 +225,9 @@
             </div>
         </div>
     </div>
+@endsection
 
+@section('scripts')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
@@ -211,4 +239,8 @@
             $('.grid-stack').gridstack();
         });
     </script>
+@endsection
+
+@section('styles')
+    {!! Charts::assets() !!}
 @endsection
