@@ -33,7 +33,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" style="padding: 0 20px;">
                                     {!! $chart->render() !!} <br><br>
                                 </div>
                             </div>
