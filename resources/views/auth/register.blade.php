@@ -26,6 +26,15 @@
                             </label>
                         </div>
                         <div class="medium-12 columns">
+                            <label>Ik ben...
+                                <select name="type">
+                                    <option>Maak uw keuze</option>
+                                    <option value="0">een Bewoner</option>
+                                    <option value="1">van de Gemeente</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="medium-12 columns">
                             <label>Wachtwoord
                                 <input type="password" name="password" placeholder="">
                             </label>

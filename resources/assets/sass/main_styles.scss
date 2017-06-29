@@ -1,157 +1,157 @@
 html, body {
-  height: 100vh;
-  margin: 0;
-  background-color: $body-bg;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+    height: 100vh;
+    margin: 0;
+    background-color: $body-bg;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 a {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 label {
-  color: $text-color;
-  font-weight: 400;
-  text-align: left;
-  font-size: 14px;
+    color: $text-color;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
 }
 
-input {
-  border: 1px solid #E5E5E5 !important;
-  border-radius: 3px !important;
-  box-shadow: none !important;
-  font-weight: 300 !important;
-  color: $text-color !important;
-  margin: 5px 0 17px 0 !important;
-  padding: 1.5rem 0.5rem 1.5rem 0.75rem !important;
+input, select {
+    border: 1px solid #E5E5E5 !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
+    font-weight: 300 !important;
+    color: $text-color !important;
+    margin: 5px 0 17px 0 !important;
+    padding: 1.5rem 0.5rem 1.5rem 0.75rem !important;
 }
 
 input[type='password'] {
-  font-size: 2rem !important;
+    font-size: 2rem !important;
 }
 
 .switch.radius {
-  .switch-paddle {
-    border-radius: 100px;
-    &:after {
-      border-radius: 50%;
+    .switch-paddle {
+        border-radius: 100px;
+        &:after {
+            border-radius: 50%;
+        }
     }
-  }
 }
 
 .button.radius {
-  border-radius: 7px;
-  padding: 17px 0;
-  font-size: 14px;
-  font-weight: 600;
+    border-radius: 7px;
+    padding: 17px 0;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .btn-default-padding {
-  padding: 0.85em 1em !important;
+    padding: 0.85em 1em !important;
 }
 
 .small-disclaimer {
-  font-size: 13px;
+    font-size: 13px;
 }
 
 .image-rounded {
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
 }
 
 .top-bar {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .top-bar-title {
-  margin-left: 40px;
-  padding-right: 40px;
-  margin-right: 40px;
-  border-right: 1px solid #e3e3e3;
+    margin-left: 40px;
+    padding-right: 40px;
+    margin-right: 40px;
+    border-right: 1px solid #e3e3e3;
 }
 
 .top-bar-right {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 .search-container {
-  display: table;
-  margin-top: 15px;
+    display: table;
+    margin-top: 15px;
 }
 
 .search-icon, .search-input {
-  display: table-cell;
-  font-size: 20px;
+    display: table-cell;
+    font-size: 20px;
 }
 
 .search-input input {
-  border: none !important;
-  color: #000 !important;
-  font-size: 16px !important;
+    border: none !important;
+    color: #000 !important;
+    font-size: 16px !important;
 }
 
 .user-container {
-  display: table;
-  margin: 0 30px 0 40px;
+    display: table;
+    margin: 0 30px 0 40px;
 }
 
 .user-image, .user-name {
-  display: table-cell;
+    display: table-cell;
 }
 
 .user-name {
-  padding-left: 20px;
-  font-size: 14px;
-  font-weight: 500;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .user-image {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
 .dashboard-content {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .dashboard-title {
-  margin: 20px 0;
-  font-size: 16px;
-  color: #4C4C4C;
-  font-weight: 500;
+    margin: 20px 0;
+    font-size: 16px;
+    color: #4C4C4C;
+    font-weight: 500;
 }
 
 .card-dashboard {
-  padding: 0 !important;
+    padding: 0 !important;
 
-  .card-header {
-    padding: 25px;
-  }
+    .card-header {
+        padding: 25px;
+    }
 
-  .card-title {
-    font-size: 14px;
-    font-weight: 500;
-  }
+    .card-title {
+        font-size: 14px;
+        font-weight: 500;
+    }
 }
 
 sub {
-  font-weight: 300;
-  font-size: 12px;
+    font-weight: 300;
+    font-size: 12px;
 }
 
 .callout {
-  border: none;
-  margin: 0 20px;
-  padding: 15px 30px;
+    border: none;
+    margin: 0 20px;
+    padding: 15px 30px;
 }
 
 .button.alert {
-  background: #FF625A;
+    background: #FF625A;
 }
 
 .button.danger {
-  background: #F5A623;
+    background: #F5A623;
 }
