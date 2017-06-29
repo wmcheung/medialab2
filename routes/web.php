@@ -1,4 +1,9 @@
 <?php
+
+Route::get('/', function() {
+    return view('welcome');
+});
+
 Route::group(['middleware'=>'guest', 'namespace'=>'Auth'], function() {
     # Login
     Route::get('login', 'AuthController@login')->name('auth.login');
